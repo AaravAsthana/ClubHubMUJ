@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Events</title>
+<script>
+  function toggleRegistrationForm(eventId) {
+      var form = document.getElementById('registration-form-' + eventId);
+      form.style.display = (form.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
+</head>
+<body>
+  <div class="dropdown">
+    <button class="dropbtn">
+        <img src="img/menu.png" alt="Menu">
+    </button>
+    <div class="dropdown-content">
+        <a href="Home.html">Home</a>
+        <a href="YourEvents.html">YourEvents</a>
+        <a href="Clubs.html">Clubs</a>
+        <a href="AboutUS.html">About Us</a>      
+    </div><br>
+    <h1>EVENTS</h1><br>
+    <div class="event">
+      <h2 onclick="toggleRegistrationForm('event1')">BEHAS by LITMUS</h2>
+      <p>April 5, 2024</p>
+      <p>LITMUS welcomes you to BEHAS, a debating competion where teams of three compete in an Asian Parliamentary Style deabte. So lets find out who has the best debating skills!  </p>
+      <div id="registration-form-event1" class="registration-form">
+          <h3>Registration Form for Event 1</h3>
+          <!-- Add your registration form elements here -->
+      </div>
+  </div>
+
+  <div class="event">
+      <h2 onclick="toggleRegistrationForm('event2')">MINERVA by LITMUS</h2>
+      <p>November 19, 2023</p>
+      <p>LITMUS welcomes you to our flagship event MINERVA, where everyone can enjoy a plethora of fun activities, competions,food stalls and much more!</p>
+      <div id="registration-form-event2" class="registration-form">
+          <h3>Registration Form for Event 2</h3>
+          <!-- Add your registration form elements here -->
+      </div>
+  </div>
+
+  <div class="event">
+      <h2 onclick="toggleRegistrationForm('event3')">MUJMUN by LITMUS</h2>
+      <p>August 18, 2023</p>
+      <p>LITMUS proudly hosts the biggest MUN in whole of Rajasthan. We welcome evryone with a penchant for formal MUN style debates. With new committees and spicy agendas, dont forget to register now!</p>
+      <div id="registration-form-event3" class="registration-form">
+          <h3>Registration Form for Event 3</h3>
+          <!-- Add your registration form elements here -->
+      </div>
+  </div>
+
+  <!-- Add more events as needed -->
+</div>
+
+
+
+</body>
+</html>

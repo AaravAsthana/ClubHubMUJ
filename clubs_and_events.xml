@@ -1,0 +1,34 @@
+<clubs_and_events>
+    <club>
+        <name>LITMUS</name>
+        <description>The Literature society of MUJ</description>
+        <events>
+            <event>
+                <name>BEHAS</name>
+                <date>April 5, 2024</date>
+                <description>LITMUS welcomes you to BEHAS, a debating competion where teams of three compete in an Asian Parliamentary Style deabte. So lets find out who has the best debating skills!</description>
+            </event>
+            <event>
+                <name>MINERVA</name>
+                <date>November 19, 2023</date>
+                <description>LITMUS welcomes you to our flagship event MINERVA, where everyone can enjoy a plethora of fun activities, competions,food stalls and much more!</description>
+            </event>
+        </events>
+    </club>
+    <club>
+        <name>ACM</name>
+        <description>The Tech society of MUJ</description>
+        <events>
+            <event>
+                <name>Event 1</name>
+                <date>March 10, 2025</date>
+                <description>Description of Event 1 for Club 2.</description>
+            </event>
+            <event>
+                <name>Event 2</name>
+                <date>April 20, 2025</date>
+                <description>Description of Event 2 for Club 2.</description>
+            </event>
+        </events>
+    </club>
+</clubs_and_events>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display CSS and XML Contents</title>
+    <link rel="stylesheet" type="text/css" href="lab.css">
+</head>
+<body>
+    <h1>CSS and XML Content</h1>
+    
+    <section id="css-content">
+        <h2>CSS Content</h2>
+        
+        <pre id="css-display"></pre>
+    </section>
+    
+    <section id="xml-content">
+        <h2>XML Content</h2>
+       
+        <pre id="xml-display"></pre>
+    </section>
+    <script>
+        function fetchAndDisplayCSS() {
+            fetch('lab.css')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('css-display').innerText = data;
+                })
+                .catch(error => console.error('Error fetching CSS:', error));
+        }
+        
+        window.onload = fetchAndDisplayCSS;
+   
+        function fetchAndDisplayXML() {
+            fetch('data.xml')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('xml-display').innerText = data;
+                })
+                .catch(error => console.error('Error fetching XML:', error));
+        }
+        
+        window.onload = fetchAndDisplayXML;
+    </script>
+</body>
+</html>

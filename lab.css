@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: azure;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#css-content, #xml-content {
+    margin-bottom: 20px;
+}
+
+pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+}
